@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body onload="randomNoise()">
+
+<iframe
+    name="clip_player"
+    src="#">
+</iframe>
+
+<script>
+var okuNoiseSlugs = [
+    "BlatantFamousCamelLitFam-PCDq18vpZx_gQNEb",
+    "BoringSpotlessTildePogChamp-4yQ5HIySKVJl8Cwb",
+    "AdorableFrigidOysterResidentSleeper-YS8SEyMMvVHolQ_l"
+];
+
+function randomNoise() {
+    var randomNumber = Math.floor(Math.random() * urlArray.length);
+    var chosenNoise = okuNoiseSlugs[randomNumber];
+    document.getElementById("clip_player").src = "https://clips.twitch.tv/embed?clip=" + chosenNoise + "&parent=okubottomnoises.com";
+}
+</script>
+
+</body>
+</html>
