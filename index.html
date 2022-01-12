@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9*/
+  position: relative;
+}
+
+.iframe-container iframe {
+   display: block;
+   border: 0;
+   height: 50%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 50%;
+}
+</style>
+</head>
 <body onload="randomNoise()">
 
-<p align="center">
 <iframe
     id="clip_player"
     height="50%"
@@ -10,7 +28,6 @@
     allowfullscreen="true"
     src="BlatantFamousCamelLitFam-PCDq18vpZx_gQNEb">
 </iframe>
-</p>
 
 <script>
 var okuNoiseSlugs = [
