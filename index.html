@@ -15,7 +15,7 @@ var okuNoiseSlugs = [
 ];
 
 function randomNoise() {
-    var randomNumber = Math.floor(Math.random() * urlArray.length);
+    var randomNumber = Math.floor(Math.random() * okuNoiseSlugs.length);
     var chosenNoise = okuNoiseSlugs[randomNumber];
     document.getElementById("clip_player").src = "https://clips.twitch.tv/embed?clip=" + chosenNoise + "&parent=okubottomnoises.com";
 }
