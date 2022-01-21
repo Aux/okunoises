@@ -13,12 +13,6 @@
 </p>
 
 <script>
-function randomNoise() {
-    var randomNumber = Math.floor(Math.random() * okuNoiseSlugs.length);
-    var chosenNoise = okuNoiseSlugs[randomNumber];
-    document.getElementById("clip_player").src = "https://clips.twitch.tv/embed?clip=" + chosenNoise + "&parent=okubottomnoises.com";
-}
-  
 var okuNoiseSlugs = [
     "BlatantFamousCamelLitFam-PCDq18vpZx_gQNEb",
     "BoringSpotlessTildePogChamp-4yQ5HIySKVJl8Cwb",
@@ -60,6 +54,12 @@ var okuNoiseSlugs = [
     "RichRamshackleMinkFloof-l50kF4EEzSGa2TUB",
     "CoySpineyKiwiImGlitch-v6H5P5-UaPtB3tOz",
 ];
+  
+function randomNoise() {
+    var randomNumber = Math.floor(Math.random() * okuNoiseSlugs.length);
+    var chosenNoise = okuNoiseSlugs[randomNumber];
+    document.getElementById("clip_player").src = "https://clips.twitch.tv/embed?clip=" + chosenNoise + "&parent=okubottomnoises.com";
+}
 </script>
 
 </body>
