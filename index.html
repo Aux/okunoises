@@ -71,8 +71,11 @@
             var randomNumber = Math.floor(Math.random() * okuNoiseSlugs.length);
             var chosenNoise = okuNoiseSlugs[randomNumber];
             document.getElementById("clip_player").src = "https://clips.twitch.tv/embed?clip=" + chosenNoise + "&parent=okubottomnoises.com";
-            viewedNoises.push(chosenNoise);
-            document.getElementById("viewed_noises").textContent = "You have seen " + viewedNoises.length + " noise(s)";
+
+            if (!viewedNoises.includes(chosenNoise)) {
+                viewedNoises.push(chosenNoise);
+                document.getElementById("viewed_noises").textContent = "You have seen " + viewedNoises.length + " noise(s)";
+            }
         }
 
         function init() {
